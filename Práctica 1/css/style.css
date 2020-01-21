@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Bangers|Lato|Open+Sans&display=swap");
+/*
+los @import siempre van al inicio del archivo
+h1: slector de etiqueta
+*/
+* {
+  /* el asterisco selecciona todos los elementos de la página*/
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  /* vh afecta el porcentaje de altura del viewport*/
+  background: #257058;
+  position: relative;
+}
+
+#titulo {
+  color: white;
+  /*sólo afecta el color de los textos*/
+  font-family: "Bangers", cursive;
+  font-size: 50px;
+  text-align: center;
+  font-style: normal;
+  font-weight: bolder;
+  background: green;
+  /*define el color de fondo*/
+  position: absolute;
+  width: 50%;
+  bottom: 50%;
+  /*afecta la posición desde la parte baja de la página*/
+  left: 50%;
+  transform: translatey(50%);
+  /* mueve el punto de ancla del objeto */
+  transform: translateX(-50%);
+}
+
+/*inicia los estilos de los artículos el # es para indicar un id*/
+#divisionarticulos {
+  background: yellow;
+  width: 75%;
+  height: 90vh;
+  margin: 5px 5px;
+  /* primer valor es arriba y abajo el segundo izq y derecha */
+  float: left;
+  /* float hace que el elemento se mueva por la página*/
+}
+
+article {
+  background: orange;
+  margin-top: 10px;
+}
+
+h3 {
+  color: cornsilk;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.parrafoarticulo {
+  /* esto es una class el . afecta los class*/
+  color: white;
+  font-family: "Opens sans", sans-serif;
+  text-align: justify;
+  padding: 20px 60px;
+  border: 2px dotted black;
+}
+
+aside {
+  background: orangered;
+  width: 24%;
+  height: 90vh;
+  float: left;
+  padding: 0px 0px;
+  color: white;
+  margin-top: 5px;
+}
+
+img {
+  width: 19vw;
+  /* vw afecta el porcentaje de ancho del viewport*/
+  height: 35vh;
+}
+
+.left {
+  text-align: center;
+}
+
+footer {
+  background: black;
+  clear: both;
+  color: white;
+  height: 5vh;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
