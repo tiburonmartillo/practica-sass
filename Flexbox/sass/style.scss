@@ -1,0 +1,22 @@
+.flex-container {
+  background: dodgerblue;
+  display: flex;
+  height: 80vh;
+  // flex-direction: column-reverse; los alínea en forma de columna descendente
+  // flex-wrap: wrap; nowrap los hijos se acomodan al padre wrap el padre se acomoda al hijo
+  // flex-flow: column nowrap;
+  // justify-content: space-between;
+  // align-items: flex-end; //distribuye en filas
+  flex-wrap: wrap;
+  align-content: flex-end; //distribuye en culumnas
+}
+.flex-container > div {
+  background: black;
+  width: 17%;
+  height: 17vh;
+  background: lightgrey;
+  margin: 10px 5px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 125px; /*altura de línea, desplaza el texto hacia abajo*/
+}

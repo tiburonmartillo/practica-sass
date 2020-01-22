@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.flex-container {
+  background: dodgerblue;
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+.flex-container > div {
+  background: black;
+  width: 17%;
+  height: 17vh;
+  background: lightgrey;
+  margin: 10px 5px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 125px;
+  /*altura de línea, desplaza el texto hacia abajo*/
+}
+
+/*# sourceMappingURL=style.css.map */
