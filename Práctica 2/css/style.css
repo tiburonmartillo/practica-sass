@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 30vh;
+  background: lightgrey;
+  position: relative;
+  margin: 2px;
+}
+header span {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bolder;
+  color: #94db10;
+  -webkit-text-stroke: 0.5px black;
+}
+
+#titulo {
+  color: black;
+  font-family: "Permanent Marker", cursive;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: bolder;
+  position: absolute;
+  width: 30%;
+  bottom: 35%;
+  left: 20%;
+}
+
+h3 {
+  color: white;
+  text-align: center;
+  font-family: "Open sans", sans-serif;
+  font-style: bold;
+  width: 10vw;
+}
+
+#articulo {
+  background: #A9C327;
+  width: 75vw;
+  height: 100vh;
+  float: left;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#parrafo1 {
+  float: left;
+  width: 50%;
+}
+
+#parrafo2 {
+  float: left;
+  width: 40%;
+}
+
+#parrafo3 {
+  width: 30%;
+  float: left;
+}
+
+#imagen {
+  width: 67%;
+  float: left;
+}
+
+.parrafoarticulo {
+  color: white;
+  font-family: "Opens sans", sans-serif;
+  text-align: justify;
+  padding: 10px 10px;
+  font-size: large;
+}
+
+aside {
+  width: 24vw;
+  height: 100vh;
+  float: left;
+  color: white;
+  margin: 2px;
+}
+
+img {
+  width: 100vh;
+}
+
+.der {
+  background: #A9C327;
+  width: 24vw;
+  height: 20vh;
+}
+
+.izq {
+  background: gray;
+  width: 24vw;
+  height: 40vh;
+  margin-top: 5px;
+}
+
+#piedefoto {
+  background: #A9C327;
+  width: 75vw;
+}
+
+.pie {
+  font-family: "Permanent Marker";
+  text-align: center;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
