@@ -17,7 +17,7 @@ section {
   /* con background-attachment: cover; se adapta al tamaño de la imagen*/
   background-position: center center;
   background-attachment: fixed;
-  /* con background-attachment: fixed; la imagen se queda fija en el fondo*/
+  /* con background-attachment: fixed; la imagen se queda fija en el fondo efecto parallax*/
 }
 
 .sec2 {
