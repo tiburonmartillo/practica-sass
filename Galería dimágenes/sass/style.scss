@@ -1,0 +1,31 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  widows: 100vw;
+  height: 100vh;
+}
+.contenedor {
+  width: 100%;
+  background: #000;
+  height: 100vh;
+  display: flex; //los ordena en fila
+  flex-direction: column; //alinea los elementos como columnas
+  justify-content: space-around; // justify content distribuye el contenido y space around rodea el espacio sobrante
+}
+.contenedor > .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+img {
+  width: 20vw;
+  height: 20vh;
+  display: block;
+  border: 2px solid #ffffff;
+  opacity: .5;
+}
+img:hover
+{
+    opacity: 1;
+    transition: 1s;
+}
