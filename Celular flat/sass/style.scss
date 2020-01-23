@@ -7,19 +7,15 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .container {
   width: 360px;
   height: 640px;
   background: rgba(0, 0, 0, 0.1);
   margin-top: 100px;
   position: relative;
-  transform: rotate(-30deg) scale(0.8) skew(25deg);
+  transform: rotate(-30deg) scale(.8) skew(25deg);
 }
-
 .container img {
   width: 100%;
   position: absolute;
 }
-
-/*# sourceMappingURL=style.css.map */
