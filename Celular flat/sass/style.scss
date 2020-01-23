@@ -18,4 +18,30 @@ body {
 .container img {
   width: 100%;
   position: absolute;
+  transition: 2s; //posición inicial
+}
+
+.container:hover img:nth-child(4)
+{
+  opacity: 1;
+  transform: translate(160px, -160px);
+  transition: 1.5s;// posición final
+}
+.container:hover img:nth-child(3)
+{
+  opacity: .8;
+  transform: translate(120px, -120px);
+  transition: 2s;
+}
+.container:hover img:nth-child(2)
+{
+  opacity: .6;
+  transform: translate(80px, -80px);
+  transition: 3s;
+}
+.container:hover img:nth-child(1)
+{
+  opacity: .4;
+  transform: translate(40px, -40px);
+  transition: 4s;
 }
