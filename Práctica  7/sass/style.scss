@@ -32,8 +32,8 @@ body {
 }
 
 @keyframes mov {
-    from {background-color: white;}
-    to {background-color: black;}
+    from {background-color: yellow;}
+    to {background-color: magenta;}
     0% {transform: translate(0px,0px)}
     10% {transform: translate(1000px,100px)}
     20% {transform: translate(0px,200px)}

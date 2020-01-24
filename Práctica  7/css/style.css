@@ -28,10 +28,10 @@ body {
 
 @keyframes mov {
   from {
-    background-color: white;
+    background-color: yellow;
   }
   to {
-    background-color: black;
+    background-color: magenta;
   }
   0% {
     transform: translate(0px, 0px);
