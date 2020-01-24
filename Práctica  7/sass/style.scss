@@ -13,17 +13,27 @@ body {
 
 }
 
-.pelota {
+.cuadro:hover .pelota{
+    animation: mov 4s infinite ease-out;
+
+}
+
+.pelota  {
+
   position: absolute;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   background: green;
-  animation: mov 4s infinite ease-out;
+  // animation: mov 4s infinite ease-out;
+  box-shadow: 10px 10px 5px gray;
+  
   
 }
 
 @keyframes mov {
+    from {background-color: white;}
+    to {background-color: black;}
     0% {transform: translate(0px,0px)}
     10% {transform: translate(1000px,100px)}
     20% {transform: translate(0px,200px)}
@@ -37,17 +47,4 @@ body {
     100% {transform: translate(0px,600px)}
   
 }
-// @keyframes mov {
-//     0% {transform: translate(0px, 0px);}
-//     10% {transform: translate(250px, 600px);}
-//     20% {transform: translate(500px, 00px);}
-//     30% {transform: translate(750px, 600px);}
-//     40% {transform: translate(1000px, 00px);}
-//     50% {transform: translate(0px, 0px);}
-//     60% {transform: translate(250px, 600px);}
-//     70% {transform: translate(500px, 000px);}
-//     80% {transform: translate(750px, 600px);}
-//     90% {transform: translate(1000px, 00px);}
-//     100% {transform: translate(200px, 600px);}
-  
-// }
+
