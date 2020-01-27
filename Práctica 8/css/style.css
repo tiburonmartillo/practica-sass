@@ -15,20 +15,24 @@ body {
   top: 10px;
   flex-direction: column;
 }
+.titulo .f {
+  display: inline-block;
+  margin: 0px 60px;
+}
 .titulo .revista {
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   padding: 5px 5px;
   margin: 5px 10px;
   border-radius: 50%;
   color: #68d628;
   font-size: 20px;
-  border: 10px solid #68d628;
+  border: 5px solid #68d628;
   text-align: center;
   position: absolute;
   top: 24px;
-  left: 35px;
+  left: 100px;
 }
 .titulo .sub {
   position: relative;
@@ -36,7 +40,8 @@ body {
   font-size: 20px;
   text-align: left;
   display: block;
-  left: 80px;
+  left: 250px;
+  width: 20%;
 }
 
 .titulo > revista > sub {
@@ -111,20 +116,27 @@ body {
 }
 
 .imagencabecera .lineamargen > .revforum {
+  position: absolute;
+  font-family: "futura";
+  font-size: 60px;
   color: white;
   position: absolute;
-  font-family: "Poiret one", sans-serif;
-  font-size: 60px;
-  text-align: justify;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 50px;
-  right: 10%;
+  right: 30px;
 }
 
 img {
   width: 100%;
+}
+
+.forumrev {
+  font-size: 40px;
+  font-family: "Futura";
+  color: white;
+  margin: 0px;
+}
+
+.forumrev > span > span {
+  color: #68d628;
 }
 
 .contenedordecolumnas {
@@ -154,6 +166,7 @@ img {
   flex-direction: column;
   justify-content: space-around;
   font-family: "Futura";
+  font-size: 25px;
 }
 
 .contenedordecolumnas .columnas .col1 .circuloradio {
@@ -168,6 +181,14 @@ img {
   padding: 30px;
   font-family: "Futura", sans-serif;
   font-size: 50px;
+  position: relative;
+}
+
+.col1 > .circuloradio > span {
+  font-size: 20px;
+  position: absolute;
+  left: 145px;
+  bottom: 80px;
 }
 
 .contenedordecolumnas .columnas .col1 .handmade {
@@ -188,18 +209,43 @@ img {
   font-family: "Futura";
 }
 
-.contenedordecolumnas .columnas .col2 .circuloemprendedores {
+.col2 .fforum {
+  font-size: 30px;
+}
+
+.col2 .verdeo {
+  color: #68d628;
+}
+
+.col2 .teinvita {
+  font-size: 20px;
+}
+
+.col2 .circuloemprendedores {
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background: gray;
   display: flex;
-  text-align: center;
   align-items: center;
   border: 10px solid #68d628;
   padding: 10px;
-  font-family: "Futura", sans-serif;
-  font-size: 30px;
+  position: relative;
+}
+
+.circuloemprendedores .circuloemp {
+  width: 30px;
+  position: absolute;
+  bottom: 70px;
+  font-size: 37px;
+  left: 13px;
+}
+
+.circuloemprendedores .emprcirculo {
+  position: absolute;
+  bottom: 50px;
+  font-size: 18px;
+  left: 14px;
 }
 
 .col3 {
@@ -209,27 +255,45 @@ img {
   text-align: center;
   border: 2px solid gray;
   position: relative;
+  color: darkgray;
 }
 
-.col3 > .megusta {
+.col3 > .seccionfacebook {
+  width: 100%;
+  height: 15%;
+  position: relative;
+  font-family: "Oswald";
+  display: flex;
+  flex-direction: column;
+}
+
+.col3 > .seccionfacebook > .perfilfb img {
+  position: absolute;
+  display: flex;
+  width: 20%;
+  margin: 5px;
+}
+
+.col3 > .seccionfacebook > .titulodepagina {
+  font-family: "Poiret one";
+}
+
+.col3 > .seccionfacebook > .megusta {
   color: white;
   width: 100px;
   height: 24px;
   background: #1234f7;
   border-radius: 3px;
   position: absolute;
+  left: 110px;
+  bottom: 5px;
 }
 
-.col3 > .megusta .f {
+.col3 > .seccionfacebook > .megusta .f {
   width: 18px;
   height: 18px;
-  color: blue;
   background: #fff;
   display: inline-block;
-  text-align: right;
-  font-family: "Poriret One";
-  font-size: 20px;
-  border-radius: 3px;
   margin: 2px;
 }
 
