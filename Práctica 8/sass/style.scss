@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Poiret+One&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Oswald|Poiret+One|Zhi+Mang+Xing&display=swap');
 @import url(//db.onlinewebfonts.com/c/5520b2b875202fac53dc536bc7aca367?family=Futura);
 body {
   margin: 0px;
@@ -8,32 +8,37 @@ body {
 .titulo {
   background: lightgrey;
   width: 100%;
-  height: 20%;
+  height: 150px;
   font-family: "Futura", sans-serif;
   font-size: 100px;
-  display: flex;
   position: relative;
+  top: 10px;
+  flex-direction: column;
 
   .revista {
     display: inline-block;
     width: 50px;
     height: 50px;
-    padding: 5px;
+    padding: 5px 5px;
+    margin: 5px 10px;
     border-radius: round(50%);
-    color: green;
+    color: rgb(104, 214, 40);
     font-size: 20px;
-    border: 10px solid green;
+    border: 10px solid rgb(104, 214, 40);
     text-align: center;
     position: absolute;
+    top: 24px;
+    left: 35px;
+    
+    
   }
   .sub {
     position: relative;
-
+    bottom: 25px;
     font-size: 20px;
-
-    text-align: right;
-    position: relative;
+    text-align: left;
     display: block;
+    left: 80px;
   }
 }
 .titulo > revista > sub {
@@ -49,60 +54,84 @@ body {
     
 }
 
-.contenedor > .row {
-  width: 100%;
-  height: 70px;
+.menu {
+ padding: 0px;
+  height: 35px;
   display: flex;
   color: white;
-  justify-content: space-around;
-  align-items: center;
-
- 
+  justify-content: space-around; 
 }
 
-li {
+.menu li {
+  list-style: none;
     font-family: "Oswald", sans-serif;
-  width: 10%;
-  height: 50px;
+  width: 12%;
+  height: 30px;
   background: green;
   color: white;
-  border-radius: round (5%);
+  border-radius: 1px;
   text-align: center;
+  padding: 3px 0px;
   
+}
+.menu .gris{
+  width: 25%;
+  background: gray;
 }
 .imagencabecera
 {
     background: url(./../img/ags.jpg);
     width: 100vw;
-    height: 50vh;
+    height: 60vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    box-sizing: border-box;
-    
-
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-.imagencabecera > .textoimagen
+.imagencabecera .lineamargen{
+ 
+  width: 98vw;
+  height: 95%;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  
+  position: relative;
+  
+}
+.imagencabecera .lineamargen > .textoimagen
 { 
-    display: block;
+  
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     color: white;
     text-align:  left;
+    font-family: "Futura", sans-serif;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+   
     
 }
 
-.imagencabecera > .revforum
+.imagencabecera .lineamargen > .revforum
 {
+  color: white;
     position: absolute;
     font-family: "Poiret one", sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     text-align: justify;
+    display: flex;
     flex-direction: column;
-
+position: absolute;
+top: 50px;
+right: 10%;
     
 }
 img{
@@ -111,12 +140,144 @@ img{
 .contenedordecolumnas
 {
     width: 100%;
+    background: #fff;
+    height: 40%;
+   margin-top: 20px;
+}
 
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
+.contenedordecolumnas > .columnas {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  
 }
-.columnas
-{
-    color: blue;
+.col1{
+  color: white;
+  background: purple;
+  width: 24%;
+  height: 500px;
+  text-align: center;
+  display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+  font-family: "Futura";
 }
+.contenedordecolumnas .columnas .col1 .circuloradio{
+border-radius: 50%;
+width: 200px;
+height: 200px;
+background: magenta;
+display: flex;
+text-align: center;
+align-items: center;
+border: 10px solid rgb(219, 219, 219);
+padding: 30px;
+font-family: "Futura", sans-serif;
+font-size: 50px;
+}
+.contenedordecolumnas .columnas .col1 .handmade{
+  font-family: "Zhi Mang Xing", cursive;
+  font-size: 40px;
+
+}
+
+.col2{
+  background: #1C2D39;
+  width: 24%;
+  height: 500px;
+  text-align: center;
+  color: white;
+  display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+font-family: "Futura";
+}
+.contenedordecolumnas .columnas .col2 .circuloemprendedores{
+  border-radius: 50%;
+width: 200px;
+height: 200px;
+background: gray;
+display: flex;
+text-align: center;
+align-items: center;
+border: 10px solid rgb(104, 214, 40);
+padding: 10px;
+font-family: "Futura", sans-serif;
+font-size: 30px;
+
+
+}
+
+.col3{
+  background: white;
+  width: 24%;
+  height: 500px;
+  text-align: center;
+  border: 2px solid gray;
+  position: relative;
+}
+
+.col3 > .megusta{
+  color: white;
+  width: 100px;
+  height: 24px;
+  background: rgb(18, 52, 247);
+  border-radius: 3px;
+  position: absolute;
+}
+.col3 > .megusta .f{
+ width: 18px;
+ height: 18px;
+ color: blue;
+ background: #fff;
+ display: inline-block;
+ text-align: right;
+ font-family: "Poriret One";
+ font-size: 20px;
+ border-radius: 3px;
+ margin: 2px;
+
+}
+.col3 > .cuadricula{
+  display: flex;
+  flex-wrap: wrap;
+}
+.col3 > .cuadricula > img {
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+}
+.col3 > .logofacebook {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 5px;
+}
+
+
+.col4{
+  background: url(./../img/leaf.jpg);
+  width: 24%;
+  height: 500px;
+  position: relative;
+}
+.contenedordecolumnas .columnas .col4 .contacto{
+  list-style: none;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  text-align: left;
+  color: white;
+  font-family: "Futura";
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+flex-direction: column;
+  
+
+ }
