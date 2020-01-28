@@ -16,9 +16,9 @@ body {
   height: 400px;
   top: calc(50% - 200px);
   left: calc(50% - 200px);
-  animation: rotator 5s linear infinite;
+  animation: rotator 8s linear infinite;
   transform-style: preserve-3d;
-  zoom: 1;
+  zoom: 4;
 }
 
 .background .rotate .sphere {
