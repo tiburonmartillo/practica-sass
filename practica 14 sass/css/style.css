@@ -31,21 +31,21 @@ div::before {
   border-radius: 10px;
   z-index: -1;
 }
-div p {
+div P {
   margin: 0;
-  padding: 20px;
   color: #fff;
   font-size: 16px;
+  padding: 20px;
   text-align: justify;
   font-family: sans-serif;
   box-sizing: border-box;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: 1s;
 }
-div:hover {
+div:hover p {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
