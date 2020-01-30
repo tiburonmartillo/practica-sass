@@ -1,0 +1,67 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  widows: 100vw;
+  height: 100vh;
+}
+.contenedor {
+  width: 100%;
+  background: black;
+  height: 100vh;
+  display: flex; //los ordena en fila
+  flex-direction: column; //alinea los elementos como columnas
+  justify-content: space-around; // justify content distribuye el contenido y space around rodea el espacio sobrante
+}
+.contenedor > .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor > .row > div{
+  width: 20vw;
+  height: 40vh;
+  border: 2px solid #ffffff;
+  position: relative;
+  // transition: 1s;
+  display: block;
+}
+img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.contenedor > .row > div > span{
+  display: block;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: white;
+}
+
+
+span {
+  display: block;
+  position: absolute;
+}
+span::after{
+  content: attr('data-text');
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.contenedor > .row > div:hover > img
+{
+  opacity: .3;
+  transition: .5s;
+}
+.contenedor > .row > div:hover > span{
+  visibility: visible;
+}
