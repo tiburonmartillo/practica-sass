@@ -13,12 +13,12 @@ div {
   box-shadow: 0px 0px 0px 15px #03a9f4;
   box-sizing: border-box;
   text-align: center;
-
+  transition: 0.5s;
   &:hover {
     border-radius: 0%;
   }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -42,7 +42,7 @@ div {
     transform: translateY(-50%);
   }
   &:hover {
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-    transition: .5s;
+    box-shadow: 0px 0px 50px  rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
   }
 }
