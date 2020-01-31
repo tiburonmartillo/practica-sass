@@ -1,0 +1,63 @@
+$color1: #18191f;
+$medidaenlaceglobal: 50px;
+$colores: #00f3ff, #f00, #0f0;
+$fila: 1,2,3;
+/*
+$ -> es igual a caracter para indicar a SASS que se declarará una variable
+$*****-> en los astericos se escribirá el nombre de la vaiable: 
+    caracteristicas de las variables:
+        1.- no deben iniciar con un número
+        2.- son sensibles a mayúsculas y minúsculas
+        3.- no puede ser solo un nñumero (tiene que ser alfanumérica)
+        4.- no puede haber 2 variables con exactamente con el mismo nombre
+        5.- no puede haber espacio entre las variables, si se desea aplicar espaciado se tiene que reemplazar por un guión bajo "_"
+
+$color1 : -> los dos puntos hacen referencia a que la variable será iniciaizada
+
+        */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: $color1;
+}
+ul {
+  position: relative;
+  display: flex; // hace que se ordenen en horizontal
+  margin: 10px 0px;
+
+  & li {
+    list-style: none;
+
+    & a {
+      display: block; // combierte las líneas en bloque los a son líneas
+      width: $medidaenlaceglobal;
+      height: $medidaenlaceglobal;
+      background: $color1;
+      text-align: center;
+      line-height: $medidaenlaceglobal; //line height centra el texto verticalmente debe medir lo mismo que el height
+      margin: 0px 10px;
+      border-radius: 15px;
+      box-shadow: -2px -2px 3px rgba(255, 255, 255, 1),
+        3px 3px 3px rgba(0, 0, 0, 0.2);
+
+      & .fa {
+        font-size: 22px;
+        color: #555;
+      }
+    }
+  }
+  @each $valorfila in $fila { // valor  fila es el valor de la fila no es una variable invocada
+    &:nth-child(#{$valorfila}) li a:hover .fa {
+      color: nth($colores, $valorfila);
+      text-shadow: 0 0 15px nth($colores, $valorfila);
+    }
+  }
+}
