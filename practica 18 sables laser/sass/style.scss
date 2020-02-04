@@ -1,3 +1,4 @@
+@use './archivodemixins' as mixins; //para mandar llamar el archivo donde se encuentran los mixins. El as es para asignarle un alias y no escribir todo el nombre del archivo
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +18,7 @@ ul {
     list-style: none;
     height: 300px;
     width: 10px;
-    background: #fff;
+    // background: #fff;
     margin: 0px 10px;
 
     &::before {
@@ -47,6 +48,25 @@ ul {
         letf-radius: 2px;
         right-radius: 2px;
       }
+    }
+    &:nth-child(1) {
+      @include mixins.background-sables(#ffd0d0, #f00); // el include es para mandar a llamar el @mixin con los valores de $color1 y $color2. Primero se llama el archivo (en este caso es un alias)  y luego el nombre del mixin
+    }
+    &:nth-child(2){
+      @include mixins.background-sables(#ffffd7,#ff0)
+    }
+    &:nth-child(3){
+      @include mixins.background-sables(#bffbbf,#0f0);
+    }
+    &:nth-child(4){
+      @include mixins.background-sables(#acffff,#00f)
+    }
+    &:nth-child(5){
+      @include mixins.background-sables(#bbff,#f0f)
+    }
+    &:hover {
+      background: #9b9b9b;
+      box-shadow: none;
     }
   }
 }

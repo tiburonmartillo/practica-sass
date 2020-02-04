@@ -18,7 +18,6 @@ ul li {
   list-style: none;
   height: 300px;
   width: 10px;
-  background: #fff;
   margin: 0px 10px;
 }
 ul li::before {
@@ -40,6 +39,30 @@ ul li::after {
   bottom: -30px;
   border-bottom-letf-radius: 2px;
   border-bottom-right-radius: 2px;
+}
+ul li:nth-child(1) {
+  background: #ffd0d0;
+  box-shadow: 0px 0px 80px #f00, 0px 0px 80px #f00, 0px 0px 80px #f00;
+}
+ul li:nth-child(2) {
+  background: #ffffd7;
+  box-shadow: 0px 0px 80px #ff0, 0px 0px 80px #ff0, 0px 0px 80px #ff0;
+}
+ul li:nth-child(3) {
+  background: #bffbbf;
+  box-shadow: 0px 0px 80px #0f0, 0px 0px 80px #0f0, 0px 0px 80px #0f0;
+}
+ul li:nth-child(4) {
+  background: #acffff;
+  box-shadow: 0px 0px 80px #00f, 0px 0px 80px #00f, 0px 0px 80px #00f;
+}
+ul li:nth-child(5) {
+  background: #bbff;
+  box-shadow: 0px 0px 80px #f0f, 0px 0px 80px #f0f, 0px 0px 80px #f0f;
+}
+ul li:hover {
+  background: #9b9b9b;
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=style.css.map */

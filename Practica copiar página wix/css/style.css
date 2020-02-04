@@ -1,15 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap");
 body {
   margin: 0;
   padding: 0;
 }
 
 .header {
+  height: 90px;
+  position: fixed;
+  top: 0;
   width: 100%;
-  height: 200px;
+  z-index: 2;
+  overflow: hidden;
 }
 .header .logo {
-  width: 10vw;
+  width: 25vw;
   height: 100%;
+  position: absolute;
+  background: #EDCD1E;
+}
+.header .logo img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35px;
+  top: 20px;
+}
+.header .logo h1 {
+  position: absolute;
+  font-family: "open sans";
+  font-weight: 15px;
+  font-size: 20;
+  left: 100px;
+  line-height: 0.7;
+}
+.header .logo h1 span {
+  font-family: "nunito";
+  font-size: 20px;
+}
+.header .menunav {
+  width: 75vw;
+  height: 100%;
+  position: absolute;
+  background: #1E2C3B;
+  right: 0;
+}
+.header .menunav ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+.header .menunav ul li {
+  color: white;
+  font-family: "open sans";
+  font-size: 15px;
+}
+.header .menunav ul li:hover {
+  color: #EDCD1E;
+}
+
+.titulo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.titulo video {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.titulo span {
+  position: absolute;
+  top: 100px;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  font-family: "open sans";
+  text-align: center;
+  font-size: 60px;
+  font-weight: 20px;
+}
+.titulo span .fa {
+  font-weight: 10px;
+  font-size: 100px;
+}
+
+.servicios {
+  margin: 0;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+.servicios .servs {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-family: "nunito";
+  font-size: 30px;
+  color: lightgray;
+  display: block;
+  top: 0;
+}
+.servicios .lineamarilla {
+  background: #EDCD1E;
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  left: calc(50% - 50px);
+  top: 100px;
+  display: block;
+}
+.servicios h6 {
+  color: #3C5975;
+  font-family: "nunito";
+  font-size: 22px;
+  margin: 20px;
+}
+.servicios span {
+  display: block;
+  margin: 20px;
+  font-family: "open sans";
+  font-size: 15px;
+  color: gray;
+  text-align: left;
+}
+.servicios .servicios3 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 480px);
+}
+.servicios .servicios3 img {
+  display: block;
+  width: 100%;
+  top: 0;
+}
+.servicios .servicios3 .descripcionservicios {
+  width: 300px;
+  height: 600px;
+  background: #F7F7F7;
+  margin: 10px;
+  padding: 30px 0;
+}
+
+.nosotros {
+  margin: 10;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+.nosotros .nostexto {
+  margin: 0;
+  width: 50%;
+  display: flex;
+  justify-content: left;
+  background: gray;
+}
+.nosotros .nostexto .nos {
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 32%;
+  font-family: "nunito";
+  font-size: 30px;
+  color: lightgray;
+  display: block;
+}
+.nosotros .nostexto .lineamarilla {
+  margin: 0;
+  background: #EDCD1E;
+  width: 100px;
+  height: 10px;
+  position: absolute;
+  left: calc(10% - 50px);
+  top: 15%;
+  display: block;
+}
+.nosotros .nostexto span {
+  margin: 0;
+  position: absolute;
+  text-align: left;
+  width: 32%;
+  font-family: "nunito";
+  font-size: 20px;
+  color: #1E2C3B;
+  left: 70px;
+  top: 200px;
+}
+.nosotros .imagenfija {
+  background: url(./../img/nosotros.webp);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.datos {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background: #EDCD1E;
 }
 
 /*# sourceMappingURL=style.css.map */
