@@ -1,0 +1,100 @@
+$width: 100%;
+$socialcolor:#3b5999,#55acee,#ef4056,#e4405f,#34465d,#25d366,#cd201f,#bd081c;
+$listaiconos: 1,2,3,4,5,6,7,8;
+
+//breakPoints
+$break-pointlap:1060px;
+$break-pointipad:768px;
+$break-pointiphone:375px;
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #ccc;
+}
+.container {
+    height: 100vh;
+  width: 80%;
+  margin: 100px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+
+  & h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+  & ul {
+    margin: 0;
+    padding: 0;
+
+    & li {
+      list-style: none;
+      float: left;
+      width: $width / 8;
+      box-sizing: border-box;
+      transition: 0.5s;
+
+      &:hover {
+        transform: rotateY(360deg);
+      }
+
+      & a {
+        display: block;
+        padding: 20px;
+        text-decoration: none;
+        color: white;
+
+        & .fa {
+          font-size: 40px;
+        }
+      }
+
+      @each $indice in $listaiconos {
+
+       //el indice es controlado por lista iconos
+          &:nth-child(#{$indice}) //cuando esta una variable dentro de parentesis se requiere el # y {} para indicar que es una variable
+          {
+              background: nth($socialcolor,$indice);
+          }
+      }
+    }
+  }
+}
+// para establecer los media queries
+//1060
+@media (max-width:$break-pointlap) {
+    .container{
+        width: $width;
+        & h1{
+            font-size: 30px;
+        }
+        & ul li{
+            width: $width / 4;
+        }
+    }
+}
+@media (max-width:$break-pointipad) {
+    .container{
+        width: $width;
+        & h1{
+            font-size: 20px;
+        }
+        & ul li{
+            width: $width / 2;
+        }
+    }
+}
+@media (max-width:$break-pointiphone) {
+    .container{
+        width: $width;
+        & h1{
+            font-size: 10px;
+        }
+        & ul li{
+            width: $width / 1;
+        }
+    }
+}
