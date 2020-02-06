@@ -12,7 +12,7 @@ body{
 
 
 .header{
-height: 90px;
+    height: 90px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -109,7 +109,7 @@ height: 90px;
    }
 .servicios {
     margin: 0;
-    padding: 0px;
+    padding-bottom: 100px;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -260,7 +260,8 @@ height: 90px;
     height: 100px;
     text-align: center;
     // margin: 20px;
-    font-weight: 5px;
+    font-weight: bolder;
+    animation: sup 1s;
     
 
     & span{
@@ -280,12 +281,17 @@ height: 90px;
    justify-items: center;}
 }
 
+@keyframes sup {
+    0%   {top: 100px;}
+    100% {top: 0px;}
+  }
+
 .proyectos{
 width: 100%;
-height: 100vh;
+height: 1000px;
 background: #fff;
 position: relative;
-padding-top: 100px;
+padding-top: 200px;
 
 
 & h2{
@@ -310,21 +316,93 @@ padding-top: 100px;
 
 }
 & .conetendorgaleria{
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
 }
-& .galeria{
-     width: 100vw;
-    height: 100vh;
+& .galeria1{
+     width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
     
 
     & img{
         width: 455px;
         height: 468px;
+        margin: 10px;
+    }
+}
+& .galeria2{
+     width: 50vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 530px;
+    
+
+    & img{
+        width: 455px;
+        height: 468px;
+        margin: 10px;
     }
 }
 }
+
+.seccionclientes{
+    width: 100%;
+    height: 400px;
+    background: $grisclaro;
+   margin: 0;
+   padding: 0;
+   position: relative;
+
+   & h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font-family: "nunito";
+    font-size: 50px;
+    color: lightgray;
+    top: 0;
+    display: block;
+}
+
+   & .lineamarilla{
+    background: $amarillo;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 150px;
+    display: block;
+    }
+
+   & .logosclientes{
+       width: 80%;
+       height: 100px;
+       background: $amarillo;
+       position: absolute;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       left: 50% - 40%;
+       top: 60% ;
+
+
+     & > img {
+         width: 40px;
+         height: 40px;
+         background: #000;
+     }
+
+   } 
+    }
