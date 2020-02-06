@@ -171,14 +171,13 @@ height: 90px;
         background: $grisclaro;
         margin: 10px;
         padding: 30px 0;
-        
     }
    
 }
 
 }
 .nosotros{
-    margin: 10;
+    margin: 0px;
     padding: 0;
     position: relative;
     width: 100%;
@@ -247,7 +246,85 @@ height: 90px;
 .datos{
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 300px;
     background: $amarillo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+& .datostexto{
+    font-family: "open sans";
+    font-size: 60px;
+    color: white;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    // margin: 20px;
+    font-weight: 5px;
+    
+
+    & span{
+        color: $azul;
+        font-size: 20px;
+      display:block;
+      font-family: "Nunito";
+      font-weight: bold;
+    }
+}
+& .separadorblanco{
+    width: 2px;
+    height: 50px;
+    margin: 10px;
+    background: #fff;
+   display: flex;
+   justify-items: center;}
+}
+
+.proyectos{
+width: 100%;
+height: 100vh;
+background: #fff;
+position: relative;
+padding-top: 100px;
+
+
+& h2{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font-family: "nunito";
+    font-size: 50px;
+    color: lightgray;
+    top: 0;
+    display: block;
+}
+& .lineamarilla{
+    background: $amarillo;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 150px;
+    display: block;
+
+}
+& .conetendorgaleria{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+& .galeria{
+     width: 100vw;
+    height: 100vh;
+    
+
+    & img{
+        width: 455px;
+        height: 468px;
+    }
+}
 }
