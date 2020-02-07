@@ -1,133 +1,123 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap');
-$amarillo:#EDCD1E;
-$azul:#1E2C3B;
-$azultexto: #3C5975;
-$grisclaro: #F7F7F7;
+@import url("https://fonts.googleapis.com/css?family=Nunito|Open+Sans&display=swap");
+$amarillo: #edcd1e;
+$azul: #1e2c3b;
+$azultexto: #3c5975;
+$grisclaro: #f7f7f7;
 
-body{
-
-    margin: 0;
-    padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
+.header {
+  height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  overflow: hidden;
 
-.header{
-    height: 90px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 2;
-    overflow: hidden;
-    
-  
-    
-    & .logo{
-        width: 25vw;
-        height: 100%;
-        position: absolute;
-        background: $amarillo;
+  & .logo {
+    width: 25vw;
+    height: 100%;
+    position: absolute;
+    background: $amarillo;
 
-        & img{
-            width: 50px;
-            height: 50px;
-            position: absolute;
-            left: 35px;
-            top: 20px;
-        }
-        & h1{
-            position: absolute;
-            font-family: "open sans";
-            font-weight: 15px;
-            font-size: 20;
-            left: 100px;
-            line-height: 0.7;
-            
-            & span{
-                
-                font-family: "nunito";
-                font-size: 20px;
-            }
-        
-        }
-    } 
-    & .menunav {
-        width: 75vw;
-        height: 100%;
-        position: absolute;
-        background: #1E2C3B;
-        right: 0;
-        
-        & ul{
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            list-style: none;
-        }
-        & ul li{
-            color: white;
-            font-family: "open sans";
-            font-size: 15px;
-
-            &:hover {
-                color: $amarillo;
-            }
-        }
-
+    & img {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: 35px;
+      top: 20px;
     }
-}
-.titulo{
-    margin: 0;
-    padding: 0;
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-& video{
-    
-    width: 100%;
-   height: 100%;
-    position: fixed;
-}
+    & h1 {
+      position: absolute;
+      font-family: "open sans";
+      font-weight: 15px;
+      font-size: 20;
+      left: 100px;
+      line-height: 0.7;
 
-& span{
-        position: absolute;
-        top: 100px;
-        color: #f1f1f1;
-        width: 100%;
-        padding: 20px;
-        font-family: "open sans";
-        text-align: center;
-        font-size: 60px;
-        font-weight: 20px;
-& .fa{
-    font-weight: 10px;
-    font-size: 100px;
-
-}
-}
-   }
-.servicios {
-    margin: 0;
-    padding-bottom: 100px;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: #ffffff;
-    
-
-    & .servs{
-        position: absolute;
-        text-align: center;
-        width: 100%;
+      & span {
         font-family: "nunito";
-        font-size: 30px;
-        color: lightgray;
-        display: block;
-        top: 0;
+        font-size: 20px;
+      }
     }
+  }
+  & .menunav {
+    width: 75vw;
+    height: 100%;
+    position: absolute;
+    background: #1e2c3b;
+    right: 0;
 
-& .lineamarilla{
+    & ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      list-style: none;
+    }
+    & ul li {
+      color: white;
+      font-family: "open sans";
+      font-size: 15px;
+
+      &:hover {
+        color: $amarillo;
+      }
+    }
+  }
+}
+.titulo {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  & video {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
+  & span {
+    position: absolute;
+    top: 100px;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+    font-family: "open sans";
+    text-align: center;
+    font-size: 60px;
+    font-weight: 20px;
+    & .fa {
+      font-weight: 10px;
+      font-size: 100px;
+    }
+  }
+}
+.servicios {
+  margin: 0;
+  padding-bottom: 100px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+
+  & .servs {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    font-family: "nunito";
+    font-size: 30px;
+    color: lightgray;
+    display: block;
+    top: 0;
+  }
+
+  & .lineamarilla {
     background: $amarillo;
     width: 100px;
     height: 10px;
@@ -135,23 +125,22 @@ body{
     left: calc(50% - 50px);
     top: 100px;
     display: block;
-
-}
-& h6{
+  }
+  & h6 {
     color: $azultexto;
     font-family: "nunito";
     font-size: 22px;
     margin: 20px;
-}
-& span{
+  }
+  & span {
     display: block;
     margin: 20px;
     font-family: "open sans";
     font-size: 15px;
     color: gray;
     text-align: left;
-}
-& .servicios3{
+  }
+  & .servicios3 {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -159,100 +148,90 @@ body{
     top: 150px;
     left: calc(50% - 480px);
 
-    & img{
-        display: block;
-        width: 100%;
-        top: 0;
+    & img {
+      display: block;
+      width: 100%;
+      top: 0;
     }
 
-    & .descripcionservicios{
-        width: 300px;
-        height: 600px;
-        background: $grisclaro;
-        margin: 10px;
-        padding: 30px 0;
+    & .descripcionservicios {
+      width: 300px;
+      height: 600px;
+      background: $grisclaro;
+      margin: 10px;
+      padding: 30px 0;
     }
-   
+  }
 }
+.nosotros {
+  margin: 0px;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: white;
 
-}
-.nosotros{
-    margin: 0px;
-    padding: 0;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: white;
-
-   & .nostexto{
-
+  & .nostexto {
     margin: 0;
     width: 50%;
     display: flex;
     justify-content: left;
     background: gray;
-    
 
-
-       & .nos{
-           margin: 0;
-           position: absolute;
-           text-align: center;
-           width: 32%;
-           font-family: "nunito";
-           font-size: 30px;
-           color: lightgray;
-           display: block;
-        }
-        & .lineamarilla{
-            margin: 0;
-            background: $amarillo;
-            width: 100px;
-            height: 10px;
-            position: absolute;
-            left: calc(10% - 50px);
-            top: 15%;
-            display: block;
-            
-        }
-        & span{
-           margin: 0;
-           position: absolute;
-           text-align: left;
-           width: 32%;
-           font-family: "nunito";
-           font-size: 20px;
-           color: $azul;
-           left: 70px;
-           top: 200px;
-           
-        }
+    & .nos {
+      margin: 0;
+      position: absolute;
+      text-align: center;
+      width: 32%;
+      font-family: "nunito";
+      font-size: 30px;
+      color: lightgray;
+      display: block;
     }
-            & .imagenfija{
-                background: url(./../img/nosotros.webp);
-                // display: block;
-                position: absolute;
-                width: 50%;
-                height: 100%;
-                right: 0;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: right;
-            
-                
-            }
-    
+    & .lineamarilla {
+      margin: 0;
+      background: $amarillo;
+      width: 100px;
+      height: 10px;
+      position: absolute;
+      left: calc(10% - 50px);
+      top: 15%;
+      display: block;
+    }
+    & span {
+      margin: 0;
+      position: absolute;
+      text-align: left;
+      width: 32%;
+      font-family: "nunito";
+      font-size: 20px;
+      color: $azul;
+      left: 70px;
+      top: 200px;
+    }
+  }
+  & .imagenfija {
+    background: url(./../img/nosotros.webp);
+    // display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
 }
-.datos{
-    position: relative;
-    width: 100%;
-    height: 300px;
-    background: $amarillo;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.datos {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: $amarillo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-& .datostexto{
+  & .datostexto {
     font-family: "open sans";
     font-size: 60px;
     color: white;
@@ -261,40 +240,39 @@ body{
     text-align: center;
     // margin: 20px;
     font-weight: bolder;
-    animation: sup 1s;
-    
+    // animation: sup 1s;
 
-    & span{
-        color: $azul;
-        font-size: 20px;
-      display:block;
+    & span {
+      color: $azul;
+      font-size: 20px;
+      display: block;
       font-family: "Nunito";
       font-weight: bold;
     }
-}
-& .separadorblanco{
+  }
+  & .separadorblanco {
     width: 2px;
     height: 50px;
     margin: 10px;
     background: #fff;
-   display: flex;
-   justify-items: center;}
+    display: flex;
+    justify-items: center;
+  }
 }
 
-@keyframes sup {
-    0%   {top: 100px;}
-    100% {top: 0px;}
-  }
+// @keyframes sup {
+//     0%   {top: 100px;}
+//     100% {top: 0px;}
+//   }
 
-.proyectos{
-width: 100%;
-height: 1000px;
-background: #fff;
-position: relative;
-padding-top: 200px;
+.proyectos {
+  width: 100%;
+  height: 1000px;
+  background: #fff;
+  position: relative;
+  padding-top: 200px;
 
-
-& h2{
+  & h2 {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -304,8 +282,8 @@ padding-top: 200px;
     color: lightgray;
     top: 0;
     display: block;
-}
-& .lineamarilla{
+  }
+  & .lineamarilla {
     background: $amarillo;
     width: 100px;
     height: 10px;
@@ -313,58 +291,64 @@ padding-top: 200px;
     left: calc(50% - 50px);
     top: 150px;
     display: block;
-
-}
-& .conetendorgaleria{
+  }
+  & .conetendorgaleria {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    
-}
-& .galeria1{
-     width: 50vw;
+  }
+  & .galeria1 {
+    width: 50vw;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 30px;
-    
 
-    & img{
-        width: 455px;
-        height: 468px;
-        margin: 10px;
+    & img {
+      width: 455px;
+      height: 468px;
+      margin: 10px;
+      opacity: 100%;
+
+      &:hover{
+          opacity: 50%;
+      }
     }
-}
-& .galeria2{
-     width: 50vw;
+  }
+  & .galeria2 {
+    width: 50vw;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 530px;
-    
 
-    & img{
-        width: 455px;
-        height: 468px;
-        margin: 10px;
+    & img {
+      width: 455px;
+      height: 468px;
+      margin: 10px;
+      opacity: 100%;
+
+      &:hover{
+          opacity: 50%;
+      }
     }
-}
+  }
 }
 
-.seccionclientes{
-    width: 100%;
-    height: 400px;
-    background: $grisclaro;
-   margin: 0;
-   padding: 0;
-   position: relative;
+.seccionclientes {
+  width: 100%;
+  height: 400px;
+  background: $grisclaro;
+  margin: 0;
+  padding: 0;
+  position: relative;
 
-   & h2{
+  & h2 {
     position: absolute;
     text-align: center;
     width: 100%;
@@ -374,9 +358,9 @@ padding-top: 200px;
     color: lightgray;
     top: 0;
     display: block;
-}
+  }
 
-   & .lineamarilla{
+  & .lineamarilla {
     background: $amarillo;
     width: 100px;
     height: 10px;
@@ -384,25 +368,140 @@ padding-top: 200px;
     left: calc(50% - 50px);
     top: 150px;
     display: block;
+  }
+
+  & .logosclientes {
+    width: 80%;
+    height: 100px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50% - 40%;
+    top: 60%;
+
+    & > img {
+      width: 100px;
+      height: 100px;
+      filter: grayscale(100%);
+
+      &:hover {
+        filter: grayscale(0%);
+      }
+    }
+  }
+}
+
+.contacto {
+  width: 100%;
+  height: 1200px;
+  background: white;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  & h2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    font-family: "nunito";
+    font-size: 50px;
+    color: lightgray;
+    top: 0;
+    display: block;
+  }
+
+  & .lineamarilla {
+    background: $amarillo;
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    left: calc(50% - 50px);
+    top: 150px;
+    display: block;
+  }
+  .mapa {
+    display: flex;
+    justify-content: center;
+    transform: translateY(200px);
+  }
+
+  & .columnas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & .preguntas {
+    padding: 200px;
+      width: 400px;
+      height: 400px;
+      transform: translateX(-40px);
+
+      & h3 {
+        font-family: "open sans";
+        font-size: 30px;
+        color: $azultexto;
+      }
+      & span{
+        font-family: "nunito";
+        font-size: 16px;
+        color: rgb(44, 44, 44);
+        line-height: 1.5;
+      }
+    }
+    & .oficina {
+    padding: 30px;
+      width: 400px;
+      height: 400px;
+      transform: translateX(-145px);
+
+      & h3 {
+        font-family: "open sans";
+        font-size: 30px;
+        color: $azultexto;
+      }
+      & span{
+        font-family: "nunito";
+        font-size: 16px;
+        color: (44,44,44);
+        line-height: 1.5;
+      }
+      & .lineamarilla {
+        background: $amarillo;
+        width: 80px;
+        height: 10px;
+        display: block;
+        transform: translateY(320px) translateX(-150px);
+      }
+    }
+  }
+}
+footer{
+    background: white;
+    width: 100%;
+    height: 5vh;
+    position: relative;
+    color: darkgray;
+    font-family: $azultexto;
+    display: flex;
+    align-items: center;
+   
+    & span{
+       width: 50%;
+    }
+    & div{
+
+        font-size: 20px;
+        
+        & .fa{
+            background: gray;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            color: white;
+
+        }
     }
 
-   & .logosclientes{
-       width: 80%;
-       height: 100px;
-       background: $amarillo;
-       position: absolute;
-       display: flex;
-       justify-content: space-around;
-       align-items: center;
-       left: 50% - 40%;
-       top: 60% ;
-
-
-     & > img {
-         width: 40px;
-         height: 40px;
-         background: #000;
-     }
-
-   } 
-    }
+}
